@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<link rel="stylesheet" type="text/css" href="mobilestyle.css" media="only screen and (max-device-width: 480px)">
+		<link rel="stylesheet" type="text/css" href="printstyle.css" media="print">
+		<title>Contact Page</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Osman Sufi's Professional Website">
+		<meta name="keywords" content="Osman,Sufi,Professional,contact,HTML,CSS,JavaScript,C++">
+		<meta name="author" content="Osman Sufi">
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<table>
+				<tr>
+					<th>
+						<a href="home.html"> <img class="displayed" alt="Osman Sufi" src="logo.png" /> </a>
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<div id="left">
+							<ul>
+								<li><a href="home.html"> Home </a> </li>
+								<li><a href="about.html"> About&nbsp;Me </a> </li>
+								<li><a href="resume.html"> Resume </a> </li>
+								<li><a href="projects.html"> Projects </a> </li>
+								<li><a href="blog.html"> Blog </a> </li>
+								<li><a href="hobbies.html"> Hobbies </a> </li>
+								<li><a href="contact.html"> Contact&nbsp;Me </a> </li>
+							</ul>
+						</div>
+
+						<div id="right">
+							<h1> Contact Page </h1>
+							<p> If you'd like to contact me please enter your name, a valid email address and what you are inquiring about and I'll get back to you shortly. </p>
+							<form method="post" action="mailto:sufiosman@gmail.com?Subject=Inquiry%20Regarding%20Your%20Website">
+								<label for="name"> Name:</label>
+								<input type="text" id="name" name="myName" required>
+								<label for="email"> Email:</label>
+								<input type="email" id="email" name="myEmail" required>
+								<label for="comments"> Comments:</label>
+								<textarea id="comments" name="myComments" rows="2" cols="20" required></textarea>
+								<table>
+									<tr>
+										<td>
+											<input type="submit" onclick="formSubmit()" value="Send Now" id="mySubmit">
+										</td>
+										<td>
+											<input type="reset" >
+										</td>
+									</tr>
+								</table>
+							</form> 
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

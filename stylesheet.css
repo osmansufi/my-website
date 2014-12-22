@@ -1,0 +1,148 @@
+body {
+	background-color: #FFFFFF;
+}
+
+#wrapper {
+	background-color:#C6E2FF;
+	border-radius: 10px;
+	margin-left: 25%;
+	margin-right: 25%;
+	min-width: 500px;
+	padding: 10px 1px 10px 1px;
+}
+
+form {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2.blog {
+	text-align: center;
+}
+
+input {
+	display: block;
+	margin-bottom: 20px;
+}
+
+label {
+	float: left;
+	display: block;
+	text-align: right;
+	width: 120px;
+	padding-right: 5px;
+}
+
+p {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+p.email {
+	text-align: center;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+p.heading {
+	text-align: center;
+	font-weight: bold;
+}
+
+textarea {
+	display: block;
+	margin-bottom: 20px;
+}
+
+table {
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+table.hobbies {
+	margin-left:10%;
+	margin-right:10%;
+}
+
+th {
+	padding: 10px 0px 35px 0px;
+}
+
+
+td {
+	text-align: left;
+	vertical-align: top;
+}
+
+td.aligned  {
+	vertical-align: top;
+}
+
+ul.resumelists {
+	margin-left:10%;
+	margin-right:10%;
+}
+
+img.displayed {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#animatedgif {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#left {
+	float: left;
+	width: 150px;
+}
+
+#left a {
+	font-size: 1.2em;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	color: #3F3F3F;
+	font-weight: bold;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+#left a:link {
+	background-color: #89C4FF;
+}
+
+#left a:visited {
+	background-color: #89C4FF;
+}
+
+#left a:hover {
+	background-color: #0F87FF;
+}
+
+#left ul {
+	list-style-type: none;
+	margin: 0;
+	padding-left:0;
+}
+
+#left li {
+	padding: 2px 5px 2px 5px;
+}
+
+#right {
+	margin-left: 135px;
+	padding: 0px 20px 0px 0px;
+}
+
+#rightblog {
+	margin-left: 0px;
+	padding: 0px 20px 0px 0px;
+}
