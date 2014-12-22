@@ -1,4 +1,4 @@
 my-website
 ==========
 
-My professional website
+This is the repository for my professional website.
