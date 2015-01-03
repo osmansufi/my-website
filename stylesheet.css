@@ -24,7 +24,8 @@ html { font-size: 100%; }
 }
 
 body {
-	background-color: #FFFFFF;
+	background-color: #93C8FE;
+	color: #DDEDFE;
 }
 
 /* The following 4 IDs identify attributes for div tags which will organize the page */
@@ -41,7 +42,8 @@ body {
 }
 
 #container {
-	background-color:#C6E2FF;
+	/*background-color:#C6E2FF;*/
+	background-color: #6AB2FD;
 	border-radius: 10px;
 	margin-left: auto;
 	margin-right: auto;
@@ -69,6 +71,20 @@ h2.blog {
 	text-align: center;
 }
 
+a:link {
+	color:#1A84F2;
+	text-decoration: none;
+}
+
+a:visited {
+	color:#1A84F2;
+	text-decoration: none;
+}
+
+a:hover {
+	color:#FFFFFF;
+}
+
 form {
 	margin-left: 10%;
 	margin-right: 10%;
@@ -77,6 +93,10 @@ form {
 input {
 	display: block;
 	margin-bottom: 20px;
+}
+
+.formcontrolcolor {
+	color: #000000;
 }
 
 label {
@@ -112,11 +132,6 @@ table.hobbies {
 	margin-right:10%;
 }
 
-th {
-	padding: 10px 0px 35px 0px;
-}
-
-
 td {
 	text-align: left;
 	vertical-align: top;
@@ -140,7 +155,7 @@ ul.resumelists {
 
 #left a {
 	border-radius: 10px;
-	color: #3F3F3F;
+	color: #C9E3FE;
 	display: block;
 	font-weight: bold;
 	padding: 5px;
@@ -149,15 +164,18 @@ ul.resumelists {
 }
 
 #left a:link {
-	background-color: #89C4FF;
+	/*background-color:#89C4FF;*/
+	background-color: #439DFB;
 }
 
 #left a:visited {
-	background-color: #89C4FF;
+	/*background-color:#89C4FF;*/
+	background-color: #439DFB;
 }
 
 #left a:hover {
-	background-color: #0F87FF;
+	/*background-color:#0F87FF;*/
+	background-color: #1A84F2;
 }
 
 #left ul {

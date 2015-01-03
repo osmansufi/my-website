@@ -36,22 +36,17 @@
 			<div id="right">
 				<p> If you'd like to contact me please enter your name, a valid email address and what you are inquiring about and I'll get back to you shortly. </p>
 				<form method="post" action="mailto:sufiosman@gmail.com?Subject=Inquiry%20Regarding%20Your%20Website">
-					<label for="name"> Name:</label>
-					<input type="text" id="name" name="myName" required>
-					<label for="email"> Email:</label>
-					<input type="email" id="email" name="myEmail" required>
-					<label for="comments"> Comments:</label>
-					<textarea id="comments" name="myComments" rows="2" cols="20" required></textarea>
-					<table>
-						<tr>
-							<td>
-								<input type="submit" onclick="formSubmit()" value="Send Now" id="mySubmit">
-							</td>
-							<td>
-								<input type="reset" >
-							</td>
-						</tr>
-					</table>
+					<fieldset>
+						<legend>Contact Form</legend>
+						<label for="name"> Name:</label>
+						<input class="formcontrolcolor" type="text" id="name" name="myName" required>
+						<label for="email"> Email:</label>
+						<input class="formcontrolcolor" type="email" id="email" name="myEmail" required>
+						<label for="comments"> Comments:</label>
+						<textarea class="formcontrolcolor" id="comments" name="myComments" rows="2" cols="20" required></textarea>
+						<input style="float:left; margin-left:18%;" class="formcontrolcolor" type="submit" onclick="formSubmit()" value="Send Now" id="mySubmit">
+						<input style="float:left;" class="formcontrolcolor" type="reset">
+					</fieldset>
 				</form> 
 			</div>
 		</div>
