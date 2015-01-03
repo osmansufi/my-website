@@ -1,98 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<link rel="stylesheet" type="text/css" href="normalize.css">
 		<link rel="stylesheet" type="text/css" href="stylesheet.css">
-		<link rel="stylesheet" type="text/css" href="mobilestyle.css" media="only screen and (max-device-width: 480px)">
-		<link rel="stylesheet" type="text/css" href="printstyle.css" media="print">
 		<title>Osman Sufi - Blog</title>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="Osman Sufi's Professional Website">
 		<meta name="keywords" content="Osman,Sufi,Professional,blog,HTML,CSS,JavaScript,C++">
 		<meta name="author" content="Osman Sufi">
 	</head>
 
 	<body>
-		<div id="wrapper">
-			<table>
-				<tr>
-					<th colspan="3">
-						<a href="home.html"> <img class="displayed" alt="Osman Sufi" src="logo.png" /> </a>
-					</th>
-				</tr>
-				<tr>
-					<td>
-						<div id="left">
-							<ul>
-								<li><a href="home.html"> Home </a> </li>
-								<li><a href="about.html"> About&nbsp;Me </a> </li>
-								<li><a href="resume.html"> Resume </a> </li>
-								<li><a href="projects.html"> Projects </a> </li>
-								<li><a href="blog.html"> Blog </a> </li>
-								<li><a href="hobbies.html"> Hobbies </a> </li>
-								<li><a href="contact.html"> Contact&nbsp;Me </a> </li>
-							</ul>
-						</div>
-					</td>
-					<td>
-						<div id="rightblog">
-							<h1> Blogs </h1>
-							<h2 class="blog"> <a name="blog3" id="blog3">12/03/14 - Blog Post #3</a> </h2>
-							<p> Boy this was some assignment. That is, this website you see before you. But I'm glad I did it. Every now and then I surprise myself and actually enjoy doing work. In fact, I intend to continue developing my web developer skills over the winter break and on to the next semester. But enough of that, onto the problems.</p>
-							<p> The major problem I confronted in this endeavor was my own ignorance of web development best practices. Though I have become more acquainted with them as a result of working on this assignment I still have much to learn. One specific example of a huge problem I confronted was that I initially designed the structure of every webpage on my website with tables. I learned, just in the nick of time, that divs and selectors are a far superior way of organizing a website-and I made the necessary changes accordingly. </p>
-							<p> In addition to this problem I had to also contend with things not displaying the same, or correctly, across different browsers. In Internet Explorer, for example, the menu on the left, with the links, was not showing a background color despite the fact that the CSS was written to include a background color. This color showed up in Firefox and Chrome on both the desktop and mobile versions of the website. It was only in Internet Explorer that it was not showing up. I resolved the issue by making a setting for establishing the color of visited links (I set the color to the same as non-visited, non-hovered over links). For some reason this seems to have resolved the issue. </p>
-							<p> In spite of these difficulties, and many others, I still managed to complete the website. But I don't intend to stop here-I intend to improve on it and to add to the website in the coming weeks and months. </p>
-							<br>
-							
-							<h2 class="blog"> <a name="blog2" id="blog2">11/22/14 - Blog Post #2</a> </h2>
-							<p> Hey everyone, I'm back. Back with another blog post... Another blog post test! </p>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							
-							<h2 class="blog"> <a name="blog1" id="blog1">11/06/14 - Blog Post #1</a> </h2>
-							<p> This is my first blog post. This blog post is a test. </p>
-							
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							
-							<p class="email"> Click <a href="mailto:sufiosman@gmail.com?Subject=Inquiry%20Regarding%20Your%20Website">here</a> to send me an email! </p>
-						</div>
-					</td>
-					<td>
-						<p>December</p>
-						<ul>
-							<li><a href="#blog3"> 12/03/14 </a> </li>
-						</ul>
-						
-						<p>November</p>
-						<ul>
-							<li><a href="#blog2"> 11/22/14 </a> </li>
-							<li><a href="#blog1"> 11/06/14 </a> </li>
-						</ul>
-					</td>
-				</tr>
-			</table>
+		<div id="container">
+			<div id="logo">
+				<a href="home.html"> <img alt="Osman Sufi" src="logo.png" /> </a>
+			</div>
+			
+			<div id="header">
+				<h1> Blog </h1>
+			</div>
+			
+			<div id="left">
+				<ul>
+					<li><a href="home.html"> Home </a> </li>
+					<li><a href="about.html"> About&nbsp;Me </a> </li>
+					<li><a href="resume.html"> Resume </a> </li>
+					<li><a href="projects.html"> Projects </a> </li>
+					<li><a href="blog.html"> Blog </a> </li>
+					<li><a href="hobbies.html"> Hobbies </a> </li>
+					<li><a href="contact.html"> Contact&nbsp;Me </a> </li>
+				</ul>
+			</div>
+			
+			<div id="centerblog">
+				<h2 class="blog"> <a name="blog3" id="blog3">12/03/14 - Blog Post #3</a> </h2>
+				<p> Boy this was some assignment. That is, this website you see before you. But I'm glad I did it. Every now and then I surprise myself and actually enjoy doing work. In fact, I intend to continue developing my web developer skills over the winter break and on to the next semester. But enough of that, onto the problems.</p>
+				<p> The major problem I confronted in this endeavor was my own ignorance of web development best practices. Though I have become more acquainted with them as a result of working on this assignment I still have much to learn. One specific example of a huge problem I confronted was that I initially designed the structure of every webpage on my website with tables. I learned, just in the nick of time, that divs and selectors are a far superior way of organizing a website-and I made the necessary changes accordingly. </p>
+				<p> In addition to this problem I had to also contend with things not displaying the same, or correctly, across different browsers. In Internet Explorer, for example, the menu on the left, with the links, was not showing a background color despite the fact that the CSS was written to include a background color. This color showed up in Firefox and Chrome on both the desktop and mobile versions of the website. It was only in Internet Explorer that it was not showing up. I resolved the issue by making a setting for establishing the color of visited links (I set the color to the same as non-visited, non-hovered over links). For some reason this seems to have resolved the issue. </p>
+				<p> In spite of these difficulties, and many others, I still managed to complete the website. But I don't intend to stop here-I intend to improve on it and to add to the website in the coming weeks and months. </p>
+				<br>
+				
+				<h2 class="blog"> <a name="blog2" id="blog2">11/22/14 - Blog Post #2</a> </h2>
+				<p> Hey everyone, I'm back. Back with another blog post... Another blog post test! </p>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				
+				<h2 class="blog"> <a name="blog1" id="blog1">11/06/14 - Blog Post #1</a> </h2>
+				<p> This is my first blog post. This blog post is a test. </p>
+				
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+			</div>
+			
+			<div id="rightblog">
+				<p>December</p>
+				<ul>
+					<li><a href="#blog3"> 12/03/14 </a> </li>
+				</ul>
+				
+				<p>November</p>
+				<ul>
+					<li><a href="#blog2"> 11/22/14 </a> </li>
+					<li><a href="#blog1"> 11/06/14 </a> </li>
+				</ul>
+			</div>
+			
+			<div id="footer">
+				<p> Click <a href="mailto:sufiosman@gmail.com?Subject=Inquiry%20Regarding%20Your%20Website">here</a> to send me an email! </p>
+			</div>
 		</div>		
 	</body>
 </html>
