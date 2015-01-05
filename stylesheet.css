@@ -10,16 +10,16 @@ html { font-size: 100%; }
 /* Medium screens (640px) */
 @media (min-width: 40rem) {
 	html {
-			font-size: 112%;
-			overflow-y: scroll;
+		font-size: 112%;
+		overflow-y: scroll;
 	}
 }
 
 /* Large screens (1024 px) */
 @media (min-width: 64rem) {
 	html {
-			font-size: 120%;
-			overflow-y: scroll;
+		font-size: 120%;
+		overflow-y: scroll;
 	}
 }
 
@@ -35,23 +35,62 @@ body {
 	padding: 5px;
 }
 
+/*Needed to make logo dimensions 300 x 60 for small screens*/
+img.logo {
+	width: 240px;
+	height: 48px;
+}
+
+/* Fixes logo size for screens 640px */
+@media (min-width: 40rem) {
+	img.logo {
+		width: 300px;
+		height: 60px;
+	}
+}
+
+/* Fixes logo size for screens 640px */
+@media (min-width: 64rem) {
+	img.logo {
+		width: 360px;
+		height: 72px;
+	}
+}
+
+/* ID for formatting heading within the body tag */
 #header {
 	text-align: center;
 	margin-left: 10%;
 	margin-right: 10%;
 }
 
+/* Container id for all elements in the body tag of the page (for small screens (default)) */
 #container {
-	/*background-color:#C6E2FF;*/
+	/*border: solid 1px;*/
 	background-color: #6AB2FD;
 	border-radius: 10px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 10px;
-	width: 1000px;
+	width: 300px;
 	padding: 10px 1px 5px 1px;
 }
 
+/* Container id adjusted for medium screens (640px) */
+@media (min-width: 40rem) {
+	#container {
+		width: 600px;
+	}
+}
+ 
+/* Container id adjusted for large screens (1024px) */
+@media (min-width: 64rem) {
+	#container {
+		width: 1000px;
+	}
+} 
+
+/* ID for the footer at the end of every page */
 #footer {
 	text-align: center;
 	margin-left: 10%;
@@ -67,10 +106,26 @@ img.center {
 	margin-right: auto;
 }
 
+/* This is strictly sizing information for the GIF on the hobbies page */
+#gifsize {
+	 height: 90%;
+	 width: 90%;
+}
+
+/* #gifsize adjusted for large screens (1024px) */
+@media (min-width: 64rem) {
+	#gifsize {
+		height: auto;
+		width: auto;
+	}
+}
+
+/* For aligning h2 tags on the blog page*/
 h2.blog {
 	text-align: center;
 }
 
+/***************Standard Link Format***************/
 a:link {
 	color:#1A84F2;
 	text-decoration: none;
@@ -84,7 +139,13 @@ a:visited {
 a:hover {
 	color:#FFFFFF;
 }
+/***************Standard Link Format***************/
 
+a:hover.inpagelink {
+	color:#DDEDFE;
+}
+
+/***********************Forms**********************/
 form {
 	margin-left: 10%;
 	margin-right: 10%;
@@ -92,7 +153,7 @@ form {
 
 input {
 	display: block;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 .formcontrolcolor {
@@ -107,21 +168,18 @@ label {
 	padding-right: 5px;
 }
 
-p {
-	margin-left: 10%;
-	margin-right: 10%;
+textarea {
+	display: block;
+	margin-bottom: 20px;
 }
+/***********************Forms**********************/
 
 p.heading {
 	text-align: center;
 	font-weight: bold;
 }
 
-textarea {
-	display: block;
-	margin-bottom: 20px;
-}
-
+/***********************Tables*********************/
 table {
 	margin-left: 2%;
 	margin-right: 2%;
@@ -140,17 +198,26 @@ td {
 td.aligned  {
 	vertical-align: top;
 }
+/***********************Tables*********************/
 
 ul.resumelists {
 	margin-left:10%;
 	margin-right:10%;
 }
 
+/* Left ID for formatting the navigation bar */
 #left {
 	display: block;
 	float: left;
 	padding: 10px;
-	width: 150px;
+	width: 299px;
+}
+
+/* #left resized for medium screens (640px) */
+@media (min-width: 40rem) {
+	#left {
+		width: 150px;
+	}
 }
 
 #left a {
@@ -164,17 +231,14 @@ ul.resumelists {
 }
 
 #left a:link {
-	/*background-color:#89C4FF;*/
 	background-color: #439DFB;
 }
 
 #left a:visited {
-	/*background-color:#89C4FF;*/
 	background-color: #439DFB;
 }
 
 #left a:hover {
-	/*background-color:#0F87FF;*/
 	background-color: #1A84F2;
 }
 
@@ -189,18 +253,59 @@ ul.resumelists {
 }
 
 #right {
-	margin-left: 135px;
-	padding: 0px 20px 0px 0px;
+	float: left;
+	padding-left: 2%;
+	width: 300px;
 }
 
-/* The following two IDs organize the center and the right "columns" of the blog. */
+/* #right resized for medium screens (640px) */
+@media (min-width: 40rem) {
+	#right {
+		padding-left: 1%;
+		width: 448px;
+	}
+}
+ 
+/* #right resized for large screens (1024px) */
+@media (min-width: 64rem) {
+	#right {
+		width: 848px;
+	}
+}
+
+/* #centerblog and #rightblog organize the center and the right "columns" of the blog page. */
 #centerblog {
-	float: left;
-	display: inline-block;
-	width: 698px;
+	padding-left: 7%;
+	padding-right: 7%;
+	width: 300px;
 }
 
 #rightblog {
-	float: left;
-	width: 150px;
+	width: 100px;
+}
+
+/* #centerblog and #rightblog resized for medium screens (640px) */
+@media (min-width: 40rem) {
+	#centerblog {
+		clear:both;
+		width: 600px;
+	}
+	
+	#rightblog {
+		float:right;
+		width: 125px;
+	}
+}
+ 
+/* #centerblog and #rightblog resized for large screens (1024px) */
+@media (min-width: 64rem) {
+	#centerblog {
+		clear:none;
+		float:left;
+		width: 698px;
+	}
+	
+	#rightblog {
+		width: 150px;
+	}
 }

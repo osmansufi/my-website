@@ -14,7 +14,7 @@
 	<body>
 		<div id="container">
 			<div id="logo">
-				<a href="home.html"> <img alt="Osman Sufi" src="logo.png" /> </a>
+				<a href="home.html"> <img class="logo" alt="Osman Sufi" src="logo.png" /> </a>
 			</div>
 			
 			<div id="header">
@@ -33,15 +33,28 @@
 				</ul>
 			</div>
 			
+			<div id="rightblog">
+				<dl>
+					<dt>December</dt>
+					<dd><a href="#blog3"> 12/03/14 </a></dd>
+				</dl>
+				
+				<dl>
+					<dt>November</dt>
+					<dd><a href="#blog2"> 11/22/14 </a></dd>
+					<dd><a href="#blog1"> 11/06/14</a></dd>
+				</dl>
+			</div>
+			
 			<div id="centerblog">
-				<h2 class="blog"> <a name="blog3" id="blog3">12/03/14 - Blog Post #3</a> </h2>
+				<h2 class="blog"> <a class="inpagelink" id="blog3" name="blog3">12/03/14 - Blog Post #3</a> </h2>
 				<p> Boy this was some assignment. That is, this website you see before you. But I'm glad I did it. Every now and then I surprise myself and actually enjoy doing work. In fact, I intend to continue developing my web developer skills over the winter break and on to the next semester. But enough of that, onto the problems.</p>
 				<p> The major problem I confronted in this endeavor was my own ignorance of web development best practices. Though I have become more acquainted with them as a result of working on this assignment I still have much to learn. One specific example of a huge problem I confronted was that I initially designed the structure of every webpage on my website with tables. I learned, just in the nick of time, that divs and selectors are a far superior way of organizing a website-and I made the necessary changes accordingly. </p>
 				<p> In addition to this problem I had to also contend with things not displaying the same, or correctly, across different browsers. In Internet Explorer, for example, the menu on the left, with the links, was not showing a background color despite the fact that the CSS was written to include a background color. This color showed up in Firefox and Chrome on both the desktop and mobile versions of the website. It was only in Internet Explorer that it was not showing up. I resolved the issue by making a setting for establishing the color of visited links (I set the color to the same as non-visited, non-hovered over links). For some reason this seems to have resolved the issue. </p>
 				<p> In spite of these difficulties, and many others, I still managed to complete the website. But I don't intend to stop here-I intend to improve on it and to add to the website in the coming weeks and months. </p>
 				<br>
 				
-				<h2 class="blog"> <a name="blog2" id="blog2">11/22/14 - Blog Post #2</a> </h2>
+				<h2 class="blog"> <a class="inpagelink" id="blog2" name="blog2">11/22/14 - Blog Post #2</a> </h2>
 				<p> Hey everyone, I'm back. Back with another blog post... Another blog post test! </p>
 				<br>
 				<br>
@@ -57,7 +70,7 @@
 				<br>
 				<br>
 				
-				<h2 class="blog"> <a name="blog1" id="blog1">11/06/14 - Blog Post #1</a> </h2>
+				<h2 class="blog"> <a class="inpagelink" id="blog1" name="blog1">11/06/14 - Blog Post #1</a> </h2>
 				<p> This is my first blog post. This blog post is a test. </p>
 				
 				<br>
@@ -73,19 +86,6 @@
 				<br>
 				<br>
 				<br>
-			</div>
-			
-			<div id="rightblog">
-				<dl>
-					<dt>December</dt>
-					<dd><a href="#blog3"> 12/03/14 </a></dd>
-				</dl>
-				
-				<dl>
-					<dt>November</dt>
-					<dd><a href="#blog2"> 11/22/14 </a></dd>
-					<dd><a href="#blog2"> 11/06/14</a></dd>
-				</dl>
 			</div>
 			
 			<div id="footer">
